@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = 'Imanol';
+
+
   return (
     <div className="App">
-      <h1> Hello World, again </h1>
+      <h1> Hello World, again { name } </h1>
     </div>
   );
 }
