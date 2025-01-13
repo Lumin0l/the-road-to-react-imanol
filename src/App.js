@@ -1,12 +1,19 @@
+import * as React from 'react';
 import './App.css';
 
 function App() {
-  const name = 'Imanol';
+
+  function getName(newName) {
+    return newName
+  }
 
 
   return (
     <div className="App">
-      <h1> Hello World, again { name } </h1>
+      <h1> Hello World, again { getName('Imanol') } </h1>
+
+      <label htmlFor="search">Search: </label>
+      <input id='search' type='text' />
     </div>
   );
 }
