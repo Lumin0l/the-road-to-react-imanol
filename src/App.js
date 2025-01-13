@@ -13,6 +13,7 @@ function App() {
     'I am test!'
   );
 
+    const testArray = ['one', 'two', 'three', 'four', 'five']
 
   return (
     <div className="App">
@@ -22,6 +23,14 @@ function App() {
       <input id='search' type='text' />
 
       {testElement}
+
+      <ul>
+      {
+        testArray.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))
+      }
+      </ul>
     </div>
   );
 }
