@@ -7,6 +7,12 @@ function App() {
     return newName
   }
 
+  const testElement = React.createElement (
+    'h2',
+    {className: "testElement"},
+    'I am test!'
+  );
+
 
   return (
     <div className="App">
@@ -14,6 +20,8 @@ function App() {
 
       <label htmlFor="search">Search: </label>
       <input id='search' type='text' />
+
+      {testElement}
     </div>
   );
 }
